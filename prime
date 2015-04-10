@@ -1,0 +1,70 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package bilanganprima;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Praktikum
+ */
+public class Bilanganprima {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+
+        int i = 0;
+        int j = 0;
+        boolean x;
+        int temp = 0;
+                
+                  int jumlah = 0;
+                 
+        Scanner input = new Scanner(System.in);
+        System.out.println("input");
+        System.out.println("awal :");
+        int bil1 = input.nextInt();
+        System.out.println("akhir :");
+        int bil2 = input.nextInt();
+        System.out.println("bilangan prima :");
+        int a = 0;
+        for (i = bil1; i <bil2; i++) {
+         
+          x=false;
+           
+          if(i==2){
+              System.out.println(i);
+          }else{
+              for(j=2;j<i;j++)
+             {
+                  if(i%j==0){
+                      x=false;                      
+                              break;
+                  }else
+                      x=true;
+                  break;
+              }
+            
+              if(x){
+                    temp = i;
+                  
+                  //System.out.println(i);
+                    }
+              jumlah =jumlah +temp;
+                  
+          }}
+        System.out.println(jumlah);
+        }
+    }
+    
+
+
+    
+
+    
+
